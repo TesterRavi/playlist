@@ -34,22 +34,22 @@ playlist is `watir-webdriver` based end-to-end testing framework.
 
 `playlist` is the file you will be calling to run your test cases. This needs to be at the root of your directory.
 
-* Run all the tests from `tests` folder.
+#### Run all the tests from `tests` folder.
 
-` ./playlist `
+  ` ./playlist `
 
     you may also provide optional `-e` environment if you do not then it will pick up default environment.
 
-` ./playlist -e qa `
+    ` ./playlist -e qa `
 
-you can also pass multiple environments:
+  you can also pass multiple environments:
 
-` ./playlist -e qa,stg,default `
+  ` ./playlist -e qa,stg,default `
 
-Tests will be run on each environments provided.
+  Tests will be run on each environments provided.
 
 
-* Run individual tests:
+#### Run individual tests:
 
   ` ./playlist -e qa -t playlist-files/tests/folder/subFolder/tests1.rb `
 
@@ -61,7 +61,7 @@ Tests will be run on each environments provided.
 
   ```
 
-* Run tests suites:
+#### Run tests suites:
 
     ` ./playlist -s playlist-files/tests/folder1/ `
 
@@ -74,7 +74,7 @@ Tests will be run on each environments provided.
 
   ```
 
-* Skip tests:
+#### Skip tests:
 
     ``` ./playlist --skip neagativeTests dataCreationTests anyTests ```
 
@@ -105,7 +105,7 @@ Tests will be run on each environments provided.
   example config.yaml is provided.
 
 
- ### playlist-files/src/pageObjects
+### playlist-files/src/pageObjects
 
 
   unlike other frameworks playlist doesn't control on how you write and use your pageObjects.
@@ -141,19 +141,18 @@ Tests will be run on each environments provided.
 
 
 
+### playlist-files/src/binary
 
-  ### playlist-files/src/binary
 
-
-You may gather browser executable in this folders and user it in your script. `src` folder path is available via `$srcPath`.
-
+  You may gather browser executable in this folders and user it in your script. `src` folder path is available via `$srcPath`.
 
 
 
- ### playlist-files/src/bin/data
+
+### playlist-files/src/bin/data
 
 
-All your data files lives here, Rule is you must follow the same folder Structure as your tests.
+  All your data files lives here, Rule is you must follow the same folder Structure as your tests.
 
    example:
 
@@ -185,14 +184,14 @@ All your data files lives here, Rule is you must follow the same folder Structur
 
 
 
-  ### tests
+### tests
 
    Al your tests using pageObjects will be placed here.
 
    tests DIR can be access via `$testDir`.
 
 
-  ### Test Results:
+### Test Results:
 
    A Success test results looks like below:
 
