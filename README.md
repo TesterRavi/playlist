@@ -142,7 +142,7 @@ Tests will be run on each environments provided.
 
 
 
-  ### playlist-
+  ### playlist-files/src/binary
 
 
 You may gather browser executable in this folders and user it in your script. `src` folder path is available via `$srcPath`.
