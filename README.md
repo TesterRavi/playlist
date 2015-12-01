@@ -38,12 +38,12 @@ playlist is `watir-webdriver` based end-to-end testing framework.
 
     ```
     ./playlist
-    
-    ```
+
+
 
     you may also provide optional `-e` environment if you do not then it will pick up default environment.
 
-    ```
+    
     ./playlist -e qa
 
     ```
