@@ -1,5 +1,5 @@
 ## Playlist
-
+-------------
 playlist is `watir-webdriver` based end-to-end testing framework.
 
 Some Key features are:
@@ -12,7 +12,7 @@ Some Key features are:
 * Works with `jenkins`, `travisCI` etc.
 
 ### Folder Structure.
-
+--------------------------
 
 
       .
@@ -34,11 +34,11 @@ Some Key features are:
 
 
 #### playlist
-
+-----------------
 `playlist` is the file you will be calling to run your test cases. This needs to be at the root of your directory.
 
 #### Run all the tests from `tests` folder.
-
+--------------------------------------------
 
     ./playlist
 
@@ -54,7 +54,7 @@ Tests will be run on each environments provided.
 
 
 #### Run individual tests:
-
+-----------------------------
   ./playlist -e qa -t playlist-files/tests/folder/subFolder/tests1.rb
 
 You may also execute multiple tests together by
@@ -66,7 +66,7 @@ You may also execute multiple tests together by
   ```
 
 #### Run tests suites:
-
+------------------------
       ./playlist -s playlist-files/tests/folder1/
 
 
@@ -79,14 +79,14 @@ You may also execute multiple tests together by
   ```
 
 #### Skip tests:
-
+--------------------
       ./playlist --skip neagativeTests dataCreationTests anyTests
 
   Note: No need to provide tests path when skipping tests just provide tests names without path or extensions and those tests will be skipped.
 
 
 ### config.yaml
-
+------------------
   config file holds all everything level and global data in yaml format. This file also needs to be placed at root level.
 
   below fields are required fields in config file:
@@ -110,7 +110,7 @@ You may also execute multiple tests together by
 
 
 ### playlist-files/src/pageObjects
-
+-----------------------------------
 
   unlike other frameworks playlist doesn't control on how you write and use your pageObjects.
 
@@ -146,7 +146,7 @@ You may also execute multiple tests together by
 
 
 ### playlist-files/src/binary
-
+-----------------------------
 
   You may gather browser executable in this folders and user it in your script. `src` folder path is available via `$srcPath`.
 
@@ -154,7 +154,7 @@ You may also execute multiple tests together by
 
 
 ### playlist-files/src/bin/data
-
+---------------------------------
 
   All your data files lives here, Rule is you must follow the same folder Structure as your tests.
 
@@ -189,14 +189,14 @@ You may also execute multiple tests together by
 
 
 ### tests
-
+-----------
    Al your tests using pageObjects will be placed here.
 
    tests DIR can be access via `$testDir`.
 
 
 ### Test Results:
-
+-------------------
    A Success test results looks like below:
 
 
