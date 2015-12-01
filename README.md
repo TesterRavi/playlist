@@ -129,6 +129,8 @@ Tests will be run on each environments provided.
 
   ```
 
+  you must write $method = __method__  in each method, this is for better tracking and error reporting.
+  
   you can now call this function in any tests by just invoking class and method like:
 
   ```
@@ -138,7 +140,6 @@ Tests will be run on each environments provided.
 
   ```
 
-    you must write $method = __method__  in each method, this is for better tracking and error reporting.
 
 
 
