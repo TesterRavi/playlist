@@ -2,11 +2,14 @@
 
 playlist is `watir-webdriver` based end-to-end testing framework.
 
-* with `Playlist` you can run Web-Test using `watir-webdriver`
-* you can write and run `database (MySql)` tests.
-* you can write and run `API` tests using `httparty`
-* you can write and run `mobile tests` using `appium`.
-* can work with CI like `jenkins`, `travisCI` etc.
+Some Key features are:
+
+* Web-Testing using `watir-webdriver`
+* `Database (MySql)` testing using `mysql2`
+* `API` tests using `httparty`
+* `Native mobile tests` using `appium`.
+* `Mobile-On-Web` using `watir-webdriver`
+* Works with `jenkins`, `travisCI` etc.
 
 ### Folder Structure.
 
@@ -41,7 +44,7 @@ playlist is `watir-webdriver` based end-to-end testing framework.
 
     ./playlist -e qa
 
-you may also provide optional `-e` environment if you do not then it will pick up default environment.
+you may also provide optional `-e` environment, by default it will look for `default` environment.
 
 you can also pass multiple environments:
 
