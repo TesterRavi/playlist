@@ -27,7 +27,8 @@ playlist is `watir-webdriver` based end-to-end testing framework.
           |__ tests
           |__ playlist.rb
 
-```
+          ```
+
 
 #### playlist
 
