@@ -245,4 +245,4 @@ You may also execute multiple tests together by
 
 Run it:
 
-  ./playlist -e qa
+  ` ./playlist -e qa `
