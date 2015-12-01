@@ -1,5 +1,5 @@
 ## Playlist
--------------
+
 playlist is `watir-webdriver` based end-to-end testing framework.
 
 Some Key features are:
