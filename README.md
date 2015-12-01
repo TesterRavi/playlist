@@ -240,7 +240,7 @@ You may also execute multiple tests together by
              ✕  File: tests/workflow/web/search_scenarios/emptySearch.rb  Method: style_search line#: 9
 
 ### Web-Test Example:
-
+--------------------
 `tests` directory includes `example-web` folder with `qa.moodle.net` web tests.
 
 Run it:
