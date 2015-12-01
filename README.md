@@ -94,7 +94,7 @@ You may also execute multiple tests together by
 
 
     global:
-      path: playlist-files
+      path: files
 
     default:
       browser: firefox
