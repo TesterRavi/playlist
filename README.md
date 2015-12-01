@@ -104,9 +104,12 @@ Tests will be run on each environments provided.
 
   example config.yaml is provided.
 
-  ### playlist-files/src/pageObjects
 
-  Unlike other frameworks playlist doesn't control on how you write and use your pageObjects.
+
+  ### playlist-files/src/pageObjects
+  
+
+  unlike other frameworks playlist doesn't control on how you write and use your pageObjects.
 
   You can organize your pageObjects by creating meaningful Structure and folders/subFolders.
 
@@ -134,42 +137,52 @@ Tests will be run on each environments provided.
     Login.login($config['username'], $config['password'])
 
   ```
-  you must write `$method = __method__ ` in each method, this is for better tracking and error reporting.
+
+    you must write `$method = __method__ ` in each method, this is for better tracking and error reporting.
+
+
 
 
   ### playlist-files/src/binary
 
-  You may gather browser executable in this folders and user it in your script. `src` folder path is available via `$srcPath`
+    You may gather browser executable in this folders and user it in your script. `src` folder path is available via `$srcPath`.
+
+
 
 
   ### playlist-files/src/bin/data
 
-  All your data files lives here, Rule is you must follow the same folder Structure as your tests.
+    All your data files lives here, Rule is you must follow the same folder Structure as your tests.
 
-  example:
+    example:
 
-  ```
-
-  |__ src
-  |     |__ bin
-  |          |__ data
-  |               |__ web
-  |                    |__ UI
-  |                         |__ uiTest.yaml
-  |
-  |
-  |__ tests
-        |__ web
-             |__ UI
-                 |__ uiTest1.rb
 
     ```
 
-    When `uiTest1.rb` is begin executed it will pick up data from `uiTest.yaml`  be sure to create correct folders.
+    |__ src
+    |     |__ bin
+    |          |__ data
+    |               |__ web
+    |                    |__ UI
+    |                         |__ uiTest.yaml
+    |
+    |
+    |__ tests
+          |__ web
+               |__ UI
+                   |__ uiTest1.rb
 
-    Access all your tests data in your tests : `$test_data['key']`
+      ```
 
-    Data DIR can be access via `$dataDir`.
+
+
+      When `uiTest1.rb` is begin executed it will pick up data from `uiTest.yaml`  be sure to create correct folders.
+
+      Access all your tests data in your tests : `$test_data['key']`
+
+      Data DIR can be access via `$dataDir`.
+
+
 
     ### tests
 
