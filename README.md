@@ -36,19 +36,22 @@ playlist is `watir-webdriver` based end-to-end testing framework.
 
 * Run all the tests from `tests` folder.
 
-``` ./playlist ```
+` ./playlist `
 
     you may also provide optional `-e` environment if you do not then it will pick up default environment.
 
-``` ./playlist -e qa ```  you can also pass multiple environments,  
-``` ./playlist -e qa,stg,default ```
+` ./playlist -e qa `
+
+you can also pass multiple environments:
+
+` ./playlist -e qa,stg,default `
 
 Tests will be run on each environments provided.
 
 
 * Run individual tests:
 
- ``` ./playlist -e qa -t playlist-files/tests/folder/subFolder/tests1.rb ```
+ ` ./playlist -e qa -t playlist-files/tests/folder/subFolder/tests1.rb `
 
  You may also execute multiple tests together by
 
@@ -60,7 +63,7 @@ Tests will be run on each environments provided.
 
   * Run tests suites:
 
-  ``` ./playlist -s playlist-files/tests/folder1/ ```
+  ` ./playlist -s playlist-files/tests/folder1/ `
 
 
   You may also execute multiple suites together by
@@ -77,22 +80,24 @@ Tests will be run on each environments provided.
 
   Note: No need to provide tests path when skipping tests just provide tests names without path or extensions and those tests will be skipped.
 
+
 ### config.yaml
 
   config file holds all everything level and global data in yaml format. This file also needs to be placed at root level.
 
-  below filed are required filed in config file:
+  below fields are required fields in config file:
 
   ```
-  global:
-    data: /playlist-files/src
-    tests: /playlist-files/tests
-    lib: /playlist-files
+    global:
+      data: /playlist-files/src
+      tests: /playlist-files/tests
+      lib: /playlist-files
 
-  default:
-    browser: firefox
+    default:
+      browser: firefox
 
   ```
+
   you can access all global variables like `$global['data']`
 
   Your environment variables are available to use in your tests like this. `$config['browser']`
