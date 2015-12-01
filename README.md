@@ -10,7 +10,7 @@ playlist is `watir-webdriver` based end-to-end testing framework.
 
 ### Folder Structure.
 
-  ```
+
 
       .
       |_ playlist
@@ -27,7 +27,7 @@ playlist is `watir-webdriver` based end-to-end testing framework.
           |__ tests
           |__ playlist.rb
 
-   ```
+
 
 
 #### playlist
@@ -61,7 +61,7 @@ Tests will be run on each environments provided.
 
   ```
 
-  * Run tests suites:
+* Run tests suites:
 
     ` ./playlist -s playlist-files/tests/folder1/ `
 
@@ -74,7 +74,7 @@ Tests will be run on each environments provided.
 
   ```
 
-  * Skip tests:
+* Skip tests:
 
     ``` ./playlist --skip neagativeTests dataCreationTests anyTests ```
 
@@ -87,7 +87,7 @@ Tests will be run on each environments provided.
 
   below fields are required fields in config file:
 
-  ```
+
     global:
       data: /playlist-files/src
       tests: /playlist-files/tests
@@ -96,7 +96,7 @@ Tests will be run on each environments provided.
     default:
       browser: firefox
 
-  ```
+
 
   you can access all global variables like `$global['data']`
 
@@ -105,18 +105,17 @@ Tests will be run on each environments provided.
   example config.yaml is provided.
 
 
-
-  ### playlist-files/src/pageObjects
+ ### playlist-files/src/pageObjects
 
 
   unlike other frameworks playlist doesn't control on how you write and use your pageObjects.
 
-  You can organize your pageObjects by creating meaningful Structure and folders/subFolders.
+   You can organize your pageObjects by creating meaningful Structure and folders/subFolders.
 
   You must follow following format:
 
-  ```
-  # LoginPageObj:
+
+  `# LoginPageObj:`
 
     class Login
         def self.login(username, password)
@@ -127,38 +126,39 @@ Tests will be run on each environments provided.
         end
     end
 
-  ```
+
 
   you must write ` $method = __method__ ` in each method, this is for better tracking and error reporting.
 
   you can now call this function in any tests by just invoking class and method like:
 
 
-  ```
+
 
     # test1
 
       Login.login($config['username'], $config['password'])
 
-  ```
 
 
 
-  ### playlist-files/src/binary
-
-    You may gather browser executable in this folders and user it in your script. `src` folder path is available via `$srcPath`.
+  ### playlist-
 
 
+You may gather browser executable in this folders and user it in your script. `src` folder path is available via `$srcPath`.
 
 
-  ### playlist-files/src/bin/data
-
-    All your data files lives here, Rule is you must follow the same folder Structure as your tests.
-
-    example:
 
 
-    ```
+ ### playlist-files/src/bin/data
+
+
+All your data files lives here, Rule is you must follow the same folder Structure as your tests.
+
+   example:
+
+
+
 
     |__ src
     |     |__ bin
@@ -173,30 +173,28 @@ Tests will be run on each environments provided.
                |__ UI
                    |__ uiTest1.rb
 
-      ```
 
 
 
-      When `uiTest1.rb` is begin executed it will pick up data from `uiTest.yaml`  be sure to create correct folders.
 
-      Access all your tests data in your tests : `$test_data['key']`
+   When `uiTest1.rb` is begin executed it will pick up data from `uiTest.yaml`  be sure to create correct folders.
 
-      Data DIR can be access via `$dataDir`.
+   Access all your tests data in your tests : `$test_data['key']`
 
-
-
-    ### tests
-
-      Al your tests using pageObjects will be placed here.
-
-      tests DIR can be access via `$testDir`.
+   Data DIR can be access via `$dataDir`.
 
 
-    ### Test Results:
 
-      A Success test results looks like below:
+  ### tests
 
-    ```
+   Al your tests using pageObjects will be placed here.
+
+   tests DIR can be access via `$testDir`.
+
+
+  ### Test Results:
+
+   A Success test results looks like below:
 
 
      [search_scenarios] Test Suite:
@@ -215,11 +213,10 @@ Tests will be run on each environments provided.
 
       👍    [  00 mins. & 06 seconds  ]
 
-      ```
 
-    A Failed test would be:
 
-    ```
+   A Failed test would be:
+
 
     [search_scenarios] Test Suite:
     ==============================
@@ -239,5 +236,3 @@ Tests will be run on each environments provided.
 
     FAILED!  uninitialized constant SearchStylesPageObject
              ✕  File: tests/workflow/web/search_scenarios/emptySearch.rb  Method: style_search line#: 9
-
-    ```
