@@ -1,0 +1,4 @@
+#! /usr/bin/env ruby
+require_relative "playlist-files/playlist.rb"
+
+playlist

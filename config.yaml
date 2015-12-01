@@ -1,0 +1,29 @@
+---
+global:
+  data: /playlist-files/src
+  tests: /playlist-files/tests
+  lib: /playlist-files
+
+default:
+  qa_url: https://qa.com
+  browserph: phantomjs
+  browserff: firefox
+  browserch: chrome
+  username: defaultUsername
+  password: Welcome1!
+
+qa:
+  qa_url: https://qa.com
+  browserph: phantomjs
+  browserff: firefox
+  browserch: chrome
+  username: qaUsername
+  password: Welcome1!
+
+stg:
+  qa_url: https://stg.com
+  browserph: phantomjs
+  browserff: firefox
+  browserch: chrome
+  username: stgUsername
+  password: Welcome1!
