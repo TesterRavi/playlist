@@ -36,17 +36,17 @@ playlist is `watir-webdriver` based end-to-end testing framework.
 
 #### Run all the tests from `tests` folder.
 
-    ```
+
     ./playlist
 
 
 
     you may also provide optional `-e` environment if you do not then it will pick up default environment.
 
-    
+
     ./playlist -e qa
 
-    ```
+    
 
   you can also pass multiple environments:
 
