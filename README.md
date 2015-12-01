@@ -51,9 +51,9 @@ Tests will be run on each environments provided.
 
 * Run individual tests:
 
- ` ./playlist -e qa -t playlist-files/tests/folder/subFolder/tests1.rb `
+  ` ./playlist -e qa -t playlist-files/tests/folder/subFolder/tests1.rb `
 
- You may also execute multiple tests together by
+  You may also execute multiple tests together by
 
 
  ```
@@ -63,7 +63,7 @@ Tests will be run on each environments provided.
 
   * Run tests suites:
 
-  ` ./playlist -s playlist-files/tests/folder1/ `
+    ` ./playlist -s playlist-files/tests/folder1/ `
 
 
   You may also execute multiple suites together by
@@ -76,7 +76,7 @@ Tests will be run on each environments provided.
 
   * Skip tests:
 
-  ``` ./playlist --skip neagativeTests dataCreationTests anyTests ```
+    ``` ./playlist --skip neagativeTests dataCreationTests anyTests ```
 
   Note: No need to provide tests path when skipping tests just provide tests names without path or extensions and those tests will be skipped.
 
@@ -129,18 +129,18 @@ Tests will be run on each environments provided.
 
   ```
 
-  you must write $method = __method__  in each method, this is for better tracking and error reporting.
-  
+  you must write ` $method = __method__ ` in each method, this is for better tracking and error reporting.
+
   you can now call this function in any tests by just invoking class and method like:
 
-  ```
-  # test1
-
-    Login.login($config['username'], $config['password'])
 
   ```
 
+    # test1
 
+      Login.login($config['username'], $config['password'])
+
+  ```
 
 
 
@@ -187,13 +187,14 @@ Tests will be run on each environments provided.
 
     ### tests
 
-    Al your tests using pageObjects will be placed here.
+      Al your tests using pageObjects will be placed here.
 
-    tests DIR can be access via `$testDir`.
+      tests DIR can be access via `$testDir`.
+
 
     ### Test Results:
 
-    A Success test results looks like below:
+      A Success test results looks like below:
 
     ```
 
