@@ -1,6 +1,6 @@
 ---
 global:
-  path: playlist-files
+  path: files
 
 default:
   url: http://qa.moodle.net/
