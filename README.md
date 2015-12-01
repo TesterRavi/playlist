@@ -55,7 +55,8 @@ Tests will be run on each environments provided.
 
 #### Run individual tests:
 -----------------------------
-  ./playlist -e qa -t playlist-files/tests/folder/subFolder/tests1.rb
+
+    ./playlist -e qa -t playlist-files/tests/folder/subFolder/tests1.rb
 
 You may also execute multiple tests together by
 
