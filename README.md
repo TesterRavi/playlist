@@ -67,7 +67,7 @@ You may also execute multiple tests together by
 
 #### Run tests suites:
 
-    ` ./playlist -s playlist-files/tests/folder1/ `
+      ./playlist -s playlist-files/tests/folder1/
 
 
   You may also execute multiple suites together by
@@ -80,7 +80,7 @@ You may also execute multiple tests together by
 
 #### Skip tests:
 
-    ``` ./playlist --skip neagativeTests dataCreationTests anyTests ```
+      ./playlist --skip neagativeTests dataCreationTests anyTests
 
   Note: No need to provide tests path when skipping tests just provide tests names without path or extensions and those tests will be skipped.
 
