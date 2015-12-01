@@ -138,7 +138,7 @@ Tests will be run on each environments provided.
 
   ```
 
-    you must write ` $method = __method__  ` in each method, this is for better tracking and error reporting.
+    you must write $method = __method__  in each method, this is for better tracking and error reporting.
 
 
 
