@@ -39,27 +39,24 @@ playlist is `watir-webdriver` based end-to-end testing framework.
 
     ./playlist
 
-
-
-    you may also provide optional `-e` environment if you do not then it will pick up default environment.
-
-
     ./playlist -e qa
 
-    
 
-  you can also pass multiple environments:
+      you may also provide optional `-e` environment if you do not then it will pick up default environment.
 
-  ` ./playlist -e qa,stg,default `
 
-  Tests will be run on each environments provided.
+      you can also pass multiple environments:
+
+  ./playlist -e qa,stg,default
+
+    Tests will be run on each environments provided.
 
 
 #### Run individual tests:
 
-  ` ./playlist -e qa -t playlist-files/tests/folder/subFolder/tests1.rb `
+  ./playlist -e qa -t playlist-files/tests/folder/subFolder/tests1.rb
 
-  You may also execute multiple tests together by
+    You may also execute multiple tests together by
 
 
  ```
