@@ -1,29 +1,21 @@
 ---
 global:
-  data: /playlist-files/src
-  tests: /playlist-files/tests
-  lib: /playlist-files
+  path: playlist-files
 
 default:
-  qa_url: https://qa.com
-  browserph: phantomjs
-  browserff: firefox
-  browserch: chrome
+  url: http://qa.moodle.net/
+  browser: chrome
   username: defaultUsername
   password: Welcome1!
 
 qa:
-  qa_url: https://qa.com
-  browserph: phantomjs
-  browserff: firefox
-  browserch: chrome
+  url: http://qa.moodle.net/
+  browser: firefox
   username: qaUsername
   password: Welcome1!
 
 stg:
-  qa_url: https://stg.com
-  browserph: phantomjs
-  browserff: firefox
-  browserch: chrome
+  url: http://qa.moodle.net/
+  browser: phantomjs
   username: stgUsername
   password: Welcome1!

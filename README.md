@@ -94,9 +94,7 @@ You may also execute multiple tests together by
 
 
     global:
-      data: /playlist-files/src
-      tests: /playlist-files/tests
-      lib: /playlist-files
+      path: playlist-files
 
     default:
       browser: firefox
