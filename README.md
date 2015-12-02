@@ -108,7 +108,7 @@ You may also execute multiple tests together by
   example config.yaml is provided.
 
 
-### playlist-files/src/pageObjects
+### files/src/pageObjects
 -----------------------------------
 
   unlike other frameworks playlist doesn't control on how you write and use your pageObjects.
@@ -144,7 +144,7 @@ You may also execute multiple tests together by
 
 
 
-### playlist-files/src/binary
+### files/src/binary
 -----------------------------
 
   You may gather browser executable in this folders and user it in your script. `src` folder path is available via `$srcPath`.
@@ -152,7 +152,7 @@ You may also execute multiple tests together by
 
 
 
-### playlist-files/src/bin/data
+### files/src/bin/data
 ---------------------------------
 
   All your data files lives here, Rule is you must follow the same folder Structure as your tests.
@@ -245,4 +245,4 @@ You may also execute multiple tests together by
 
 Run it:
 
-  ` ./playlist -e qa `
+  ` ./playlist -e qa files/tests/example-web`
