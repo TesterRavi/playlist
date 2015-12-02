@@ -247,7 +247,7 @@ Run it:
 
   ` ./playlist -e qa -s files/tests/example-web/`
 
-### Web-Test Example:
+### API-Test Example:
 --------------------
 `tests` directory includes `example-api` folder with `api methods`.
 
