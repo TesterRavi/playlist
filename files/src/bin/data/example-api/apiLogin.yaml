@@ -1,0 +1,10 @@
+---
+
+  expCode: 200
+  responseFieldsToMatch:
+    - sid
+    - member_status
+    - active
+    - member_incentive
+    - credits
+    - country

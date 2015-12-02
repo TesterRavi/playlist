@@ -13,6 +13,13 @@ qa:
   browser: firefox
   username: qaUsername
   password: Welcome1!
+  uri: https://www.hautelook.com/api
+  auth: Authorization
+  authCode: *yourAuthCode*
+  contType: Content-Type
+  contTypeCode: application/json
+  apiUsername: *userName*
+  apiPassword: *password*
 
 stg:
   url: http://qa.moodle.net/

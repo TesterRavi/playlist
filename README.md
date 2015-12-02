@@ -246,3 +246,11 @@ You may also execute multiple tests together by
 Run it:
 
   ` ./playlist -e qa -s files/tests/example-web/`
+
+### Web-Test Example:
+--------------------
+`tests` directory includes `example-api` folder with `api methods`.
+
+Run it:
+
+  ` ./playlist -e qa -s files/tests/example-api/`

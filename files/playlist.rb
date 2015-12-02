@@ -4,7 +4,16 @@ require 'watir-webdriver'
 require 'test/unit'
 require 'mysql2'
 require 'trollop'
+require "httparty_with_cookies"
+require "json"
+
+class Hl_api_test
+  include HTTParty_with_cookies
+end
+
 include Test::Unit::Assertions
+
+$apiClient = Hl_api_test.new
 
 def self.playlist
 
