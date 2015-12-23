@@ -4,7 +4,6 @@ class Run
 
       begin
         @yamlDataFiles = Command.constructDataFile(rb_file)
-        puts @yamlDataFiles
       rescue => e
         Result.failed(e)
         Result.tearDown

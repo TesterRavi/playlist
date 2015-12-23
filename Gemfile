@@ -10,3 +10,7 @@ gem 'headless'
 gem 'test-unit'
 gem 'httparty_with_cookies'
 gem 'trollop'
+gem 'json-schema'
+gem 'hashdiff'
+# gem 'facets', require: false
+# gem 'jsonpath'
